@@ -2,9 +2,9 @@ import React, { useContext } from 'react'
 import { AppContext } from '../shared/app.context'
 
 const Home = () => {
-    const [{name}] = useContext(AppContext)
+    const [state] = useContext(AppContext)
     return (
-        <div>Home, {name}</div>
+        <div>Home, {state?.config?.name}</div>
     ) 
 }
 export default Home

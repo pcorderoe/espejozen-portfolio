@@ -1,32 +1,18 @@
 import { createContext } from "react";
-import React, { useState, useEffect } from 'react'
-import Utilities from "./app.utilities";
+import React, {  } from 'react'
+import { useAppReducer } from "./app.reducer";
+import { useMetadata } from "./app.service";
 
 export const AppContext = createContext([])
 
-const useMetadata = (setContext) => {
-    const [loading, setLoading] = useState(true)
-
-    useEffect(() => {
-        fetch(`/manifest.json`).then(o => o.json()).then(d => {
-            setContext({...d, util: Utilities(d)})
-            setLoading(false)
-            Utilities(d).logger.log('Context','Reloading Metadata')
-        })
-    }, [setContext])
-    return [loading]
-}
-
-
-
-
 export const Context = ({ children }) => {
-    const [context, setContext] = useState({})
-    const [loading] = useMetadata(setContext)
+    const [state, dispatcher] = useAppReducer({})
+    const [loading] = useMetadata(dispatcher)
+
     return (
-        <AppContext.Provider value={[context, setContext]}>
-            {loading && <div>Loading....</div>}
-            {!loading && children}
+        <AppContext.Provider value={[state, dispatcher]}>
+            { loading && <span>Loading...</span>}
+            { !loading && children }
         </AppContext.Provider>
     )
 }
