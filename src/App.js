@@ -1,9 +1,7 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { Switch, BrowserRouter, Route } from "react-router-dom";
-import { AppContext, Context } from './shared/app.context.js'
+import { Context } from './shared/app.context.js'
 import Home from './home/home.page';
-import { AppActions } from './shared/app.reducer.js';
-import { AppService } from './shared/app.service.js';
 
 
 

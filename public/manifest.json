@@ -1,6 +1,10 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "My Portfolio",
+  "name": "My portfolio",
+  "info":{
+    "fullname":"Patricio Cordero",
+    "profesion":"FullStack Software Engineer"
+  },
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,6 +22,8 @@
       "sizes": "512x512"
     }
   ],
+  "mypicture":"img/myself_700x700.jpg",
+  "bg_main":"img/bgweb_2400x1600.jpg",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",

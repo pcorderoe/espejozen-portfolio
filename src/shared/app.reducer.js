@@ -9,6 +9,9 @@ export const AppReducer = (state, action) => {
     }
 }
 
+
+
+
 /***
  * Middleware for dispatch for handle async calls
  */

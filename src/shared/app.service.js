@@ -1,5 +1,4 @@
-import { useContext, useEffect, useState } from "react"
-import { AppContext } from "./app.context"
+import { useEffect, useState } from "react"
 import { AppActions } from "./app.reducer"
 import Utilities from "./app.utilities"
 
@@ -28,6 +27,7 @@ export const useMetadata = (dispatcher) => {
             dispatcher(AppActions.LOAD_METADATA, v)
             setLoading(false)
         })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
     return [loading, data]
 }
