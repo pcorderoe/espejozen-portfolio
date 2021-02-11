@@ -1,20 +1,69 @@
 <!DOCTYPE html>
-<html lang="es-CL">
+<html lang="en_US">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+    <link rel="canonical" href="%PUBLIC_URL%" />
+    <link rel="icon" href="%PUBLIC_URL%/img/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Patricio Cordero, FullStack Software Engineer. An engineer specialized to create outstanding software"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <meta name="keywords" content="Patricio Cordero Espejo,Patricio Cordero,FullStack Software Engineer,FullStack, Full Stack Developer, Concepcion, Chile">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>My Portfolio</title>
+    <meta property="og:title" content="Patricio Cordero, FullStack Software Engineer">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Patricio Cordero, FullStack Software Engineer">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="%PUBLIC_URL%">
+    <meta property="og:description" content="Patricio Cordero, FullStack Software Engineer. An engineer specialized to create outstanding software">
+    <meta property="og:image"
+    content="%PUBLIC_URL%/img/myself_700x700.jpg">
+    <meta property="fb:profile_id" content="pcordero">
+    <meta property="fb:admins" content="pcordero">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@pcorderoe" />
+    <meta name="twitter:title" content="Patricio Cordero, FullStack Software Engineer" />
+    <meta name="twitter:description" content="An engineer specialized to create outstanding software" />
+    <meta name="twitter:url" content="%PUBLIC_URL%" />
+    <meta name="author" content="Patricio Cordero" />
+    <meta name="robots" content="index, follow" />
+    <title>Patricio Cordero, FullStack Software Engineer</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;700;900&display=swap');
+      body{margin:0;font-family: 'Roboto', sans-serif;}
+      .mLFtC{
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          font-size:1.4rem;
+          background-size:cover;
+          color:white;
+          text-shadow:1px 1px #999;
+          background:#B1CFE9;
+          height:100vh;
+      }
+      .mLFtC span{font-size:1.2rem; margin-left:10px;}
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <div class="mLFtC"><span>Loading...</span></div>
+    </div>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MD23KP6022"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-MD23KP6022');
+    </script>
   </body>
 </html>

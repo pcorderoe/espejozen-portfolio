@@ -12,6 +12,7 @@ const WrapperGreet = styled.div`
     text-align:left;
     margin-left:8rem;
     text-shadow:1px 1px #999;
+    align-self:center;
     @media (max-width: 767.98px) { width:80%; text-align:center;margin:50px auto;}
     h1{
         line-height:2.5rem;
@@ -40,15 +41,14 @@ const ContactMeLink = styled(Link)`
         color:#999;
     }
 `
-const Home = () => {
+const Home = (props) => {
     const [state] = useContext(AppContext)
     return (
-        <Layout contentAlign='center'>
+        <Layout contentAlign='center' {...props}>
             <WrapperGreet>
                 <h1><span>Hi, I'm Patricio,</span> a software engineer specialized to create <strong>outstanding software</strong></h1>
-                <ContactMeLink>Contact me</ContactMeLink>
+                <ContactMeLink to='/contact-me'>Contact me</ContactMeLink>
             </WrapperGreet>
-            {/* <div>Home, {state?.config?.name}</div> */}
         </Layout>
     ) 
 }
