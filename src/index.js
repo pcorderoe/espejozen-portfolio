@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import reportWebVitals from './reportWebVitals';
 import { pdfjs } from 'react-pdf';
-import App from './app.js';
+import App from './App';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 
