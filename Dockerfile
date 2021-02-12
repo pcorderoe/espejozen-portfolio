@@ -6,7 +6,7 @@ COPY package.json ./
 COPY yarn.lock ./
 RUN yarn install --frozen-lockfile
 RUN yarn global add react-scripts@4.0.1 --silent
-COPY . ./
+COPY . .
 RUN yarn run build
 
 # production environment
