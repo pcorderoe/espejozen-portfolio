@@ -1,0 +1,7 @@
+version: '2'
+services:
+  portfolio:
+    build: https://github.com/pcorderoe/espejozen-portfolio.git
+    container_name: portfolio
+    ports:
+      - 80:80
