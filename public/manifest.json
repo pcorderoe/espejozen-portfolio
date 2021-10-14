@@ -26,7 +26,7 @@
       "sizes": "512x512"
     }
   ],
-  "medium_posts":"https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@espejozen",
+  "medium_posts":"https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@patricio-cordero",
   "timezone":-3,
   "mypicture":"img/myself_700x700.jpg",
   "bg_main":"img/bgweb_2400x1600.jpg",
