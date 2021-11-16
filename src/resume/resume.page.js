@@ -51,7 +51,7 @@ const Resume = (props) => {
         <Layout {...props}>
             <ResumeWrapper>
                 <Document
-                    file="files/Resume2021.pdf"
+                    file="files/Resume-2021.pdf"
                     onLoadSuccess={onDocumentLoadSuccess}
                     renderMode='svg'
                 >

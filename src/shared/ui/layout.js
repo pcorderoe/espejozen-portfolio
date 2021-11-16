@@ -54,6 +54,7 @@ const Menu = styled.ul`
             left:0;
             width:100%;
             background:rgba(0,0,0,.8);
+            li:first-child {margin-top:30px;}
             li:last-child{ margin-top:50px; margin-bottom:20px;} 
             &.shown{ display:block;}}
     `
@@ -63,10 +64,13 @@ const MenuLink = styled(Link)`
             text-decoration:none;
             font-size:.8rem;
             display:block;
-            padding:10px 11px 10px 0px; 
+            padding:14px 0;
+            margin: 7px 15px;
+            border-radius:24px; 
             padding-inline-start:40px; 
             &:hover, &.active{ background-color:rgba(0,0,0,.3); }
             &.icon{ font-size:1rem !important; padding-inline-start:10px;}
+            &.icon:hover{ background: none;}
             `
 
 const Social = styled.ul` list-style:none; display:flex;margin-left:-10px; li:last-child{display:none;} @media (max-width: 767.98px) { margin-left:0;padding:0 0 0 10px; li:last-child{margin-left:auto;margin-right:10px; display:block;}} `
