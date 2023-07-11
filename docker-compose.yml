@@ -3,5 +3,8 @@ services:
   portfolio:
     build: https://github.com/pcorderoe/espejozen-portfolio.git
     container_name: portfolio
+    environment:
+      - VIRTUAL_HOST=espejozen.cl,www.espejozen.cl
+      - LETSENCRYPT_HOST=espejozen.cl,www.espejozen.cl
     ports:
       - 80:80
